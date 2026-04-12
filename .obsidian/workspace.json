@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "cff7d78ef1dea1b2",
+            "id": "74cf75ec20073672",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -22,7 +22,7 @@
             }
           },
           {
-            "id": "74cf75ec20073672",
+            "id": "922fb9463073e825",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -93,7 +93,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "4e9f1c55a0ec9270",
@@ -199,10 +200,22 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "74cf75ec20073672",
+  "active": "922fb9463073e825",
   "lastOpenFiles": [
-    "RL-深度学习/RL_Westlake.md",
+    "Attachments/Pasted image 20260412205408.png",
+    "Attachments/Pasted image 20260412203635.png",
+    "Attachments/Pasted image 20260412203039.png",
+    "Attachments/Pasted image 20260412202959.png",
+    "Attachments/Pasted image 20260412202800.png",
+    "Attachments/Pasted image 20260412195300.png",
+    "Attachments/Pasted image 20260412195021.png",
+    "Attachments/Pasted image 20260412192857.png",
+    "Attachments/Pasted image 20260412190154.png",
+    "Attachments/Pasted image 20260412184811.png",
+    "Attachments/Pasted image 20260412174056.png",
     "DS-数据结构/Data Structure-数据结构.md",
+    "Attachments",
+    "RL-深度学习/RL_Westlake.md",
     "RL-深度学习"
   ]
 }
