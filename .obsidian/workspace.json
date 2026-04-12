@@ -35,7 +35,8 @@
               "title": "Data Structure-数据结构"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -108,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "RL-深度学习/RL_Westlake.md",
+                "file": "DS-数据结构/Data Structure-数据结构.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "RL_Westlake 的反向链接列表"
+              "title": "Data Structure-数据结构 的反向链接列表"
             }
           },
           {
@@ -127,12 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "RL-深度学习/RL_Westlake.md",
+                "file": "DS-数据结构/Data Structure-数据结构.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "RL_Westlake 的出链列表"
+              "title": "Data Structure-数据结构 的出链列表"
             }
           },
           {
@@ -170,13 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "RL-深度学习/RL_Westlake.md",
+                "file": "DS-数据结构/Data Structure-数据结构.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "RL_Westlake 的大纲"
+              "title": "Data Structure-数据结构 的大纲"
             }
           }
         ]
@@ -198,10 +199,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "cff7d78ef1dea1b2",
+  "active": "74cf75ec20073672",
   "lastOpenFiles": [
+    "RL-深度学习/RL_Westlake.md",
     "DS-数据结构/Data Structure-数据结构.md",
-    "RL-深度学习",
-    "RL-深度学习/RL_Westlake.md"
+    "RL-深度学习"
   ]
 }

@@ -3,6 +3,7 @@
 目录：1.基本概念；2.贝尔曼公式；3.贝尔曼最优公式；4.值策略迭代；5.蒙特卡罗方法；6.随机近似理论；7.时序差分方法；8.值函数近似；9.策略梯度方法；10.Actor-Critic方法
 
 
+
 ## Chapter1. Basic Concepts
 
 - **State**: the status of the agent with respect to the environment.
