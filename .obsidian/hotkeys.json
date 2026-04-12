@@ -4,5 +4,13 @@
       "modifiers": [],
       "key": "F12"
     }
+  ],
+  "templater-obsidian:Templates/插入时间.md": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "T"
+    }
   ]
 }
