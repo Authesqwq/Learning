@@ -203,4 +203,31 @@ $$
 v_{\pi}(s)=\sum_{a}\pi(a\mid s)q_{\pi}(s,a)
 $$
 
-## Chapter 3. Optimal Policy and Bellman Optimality Equation
+## Chapter 3. Optimal Policy and Bellman Optimality Equation(BOE)
+
+- If:
+  $$
+  v_{\pi_1}(s) \ge v_{\pi_2}(s), \forall s \in S
+  $$
+  then $\pi_1$ is better than$\pi_2$.
+
+  A policy $\pi^*$ is optimal if $v_{\pi^*}(s) \ge v_{\pi_2}(s)$.
+
+  
+
+- $$
+  \begin{aligned}
+  v(s)&=\max_{\pi}\sum_{a} \pi(a\mid s)[\sum_{r} p(r\mid s,a)r+\gamma \sum_{s'}p(s'\mid s,a)v_{\pi}(s')], \forall s \in S\\
+  &=\max_{\pi}\sum_{a} \pi(a\mid s)q(s,a) \;\; s\in S
+  \end{aligned}
+  $$
+
+  
+
+- $$
+  v=\max_{\pi}(r_{\pi}+\gamma P_{\pi}v)
+  $$
+
+  
+
+- 
