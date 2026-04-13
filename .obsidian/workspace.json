@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "4e9f1c55a0ec9270",
@@ -188,23 +187,22 @@
   },
   "active": "922fb9463073e825",
   "lastOpenFiles": [
+    "Attachments/time.md",
+    "DS-数据结构/Data Structure-数据结构.md",
     "Attachments/Pasted image 20260413204135.png",
     "Attachments/Pasted image 20260413204104.png",
     "Attachments/Pasted image 20260413204030.png",
     "Attachments/Pasted image 20260413172745.png",
     "Templates/插入时间.md",
-    "DS-数据结构/Data Structure-数据结构.md",
     "RL-深度学习/RL_Westlake.md",
     "Templates",
     "time.md",
-    "Attachments/time.md",
     "Attachments/Pasted image 20260412205408.png",
     "Attachments/Pasted image 20260412203635.png",
     "Attachments/Pasted image 20260412203039.png",
     "Attachments/Pasted image 20260412202959.png",
     "Attachments/Pasted image 20260412202800.png",
     "Attachments/Pasted image 20260412195300.png",
-    "Attachments/Pasted image 20260412195021.png",
     "Attachments",
     "RL-深度学习"
   ]
