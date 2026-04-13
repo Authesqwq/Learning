@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "4e9f1c55a0ec9270",
@@ -187,6 +188,10 @@
   },
   "active": "922fb9463073e825",
   "lastOpenFiles": [
+    "Attachments/Pasted image 20260413204135.png",
+    "Attachments/Pasted image 20260413204104.png",
+    "Attachments/Pasted image 20260413204030.png",
+    "Attachments/Pasted image 20260413172745.png",
     "Templates/插入时间.md",
     "DS-数据结构/Data Structure-数据结构.md",
     "RL-深度学习/RL_Westlake.md",
@@ -200,9 +205,6 @@
     "Attachments/Pasted image 20260412202800.png",
     "Attachments/Pasted image 20260412195300.png",
     "Attachments/Pasted image 20260412195021.png",
-    "Attachments/Pasted image 20260412192857.png",
-    "Attachments/Pasted image 20260412190154.png",
-    "Attachments/Pasted image 20260412184811.png",
     "Attachments",
     "RL-深度学习"
   ]
