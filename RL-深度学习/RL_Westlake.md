@@ -205,29 +205,45 @@ $$
 
 ## Chapter 3. Optimal Policy and Bellman Optimality Equation(BOE)
 
-- If:
-  $$
+- If:$$
   v_{\pi_1}(s) \ge v_{\pi_2}(s), \forall s \in S
   $$
   then $\pi_1$ is better than$\pi_2$.
 
-  A policy $\pi^*$ is optimal if $v_{\pi^*}(s) \ge v_{\pi_2}(s)$.
-
-  
-
-- $$
+  A policy $\pi^*$ is optimal if $v_{\pi^*}(s) \ge v_{\pi_2}(s)$.$$
   \begin{aligned}
   v(s)&=\max_{\pi}\sum_{a} \pi(a\mid s)[\sum_{r} p(r\mid s,a)r+\gamma \sum_{s'}p(s'\mid s,a)v_{\pi}(s')], \forall s \in S\\
   &=\max_{\pi}\sum_{a} \pi(a\mid s)q(s,a) \;\; s\in S
   \end{aligned}
   $$
-
-  
-
-- $$
+ - Bellman optimality equation:$$
   v=\max_{\pi}(r_{\pi}+\gamma P_{\pi}v)
   $$
-
-  
-
-- 
+	Let$$
+  f(v)=\max_{\pi}(r_{\pi}+\gamma P_{\pi}v)
+  $$Then it becomes $v=f(v)$
+	  where$$
+	  [f(v)]_s=\sum_{a}\pi(a\mid s)q_{\pi}(s,a),\;\; s\in S$$
+  - Contraction mapping theorem
+	  - Fixed point: $x\in X$ is a fixed point of $f: X \to X$ if $f(x)=x$
+	  - contraction mapping(or contractive function):$f$ is a cm if$$||f(x_1)-f(x_2)||\le \gamma||x_1 - x_2||$$where $\gamma \in (0,1)$
+	  - Theorem:
+		  - For any equation that has the form of $x=f(x)$,then
+		  - Existence: there exists a fixed point $x^*$ satisfying $f(x^*)=x^*$
+		  - Uniqueness: the fixed point $x^*$ is unique
+		  - Algorithm: consider a sequence $\{x_k\}$ where$x_{k+1}=f(x_k)$,then $x_k \to x^*$ as $k\to \infty$
+		  - ==压缩映射？==
+	  - Solve the BOE
+  - Policy optimality
+	  - Suppose$$\pi^* = arg \max{\pi}(r_{\pi}+\gamma P_{\pi}v^*)$$Then$$v^*=r_{\pi^*}+\gamma P_{\pi^*}v^*$$Therefore, $\pi^*$ is a policy and $v^* = v_{\pi^*}$ is the corresponding state value.
+	  - Greedy Optimal Policy
+  - Factors:
+	  - ![[Pasted image 20260414155347.png]]
+	  - we know the red factors:
+		  - Reward design:$r$
+		  - System model:$p(s'|s,a)\; , \; p(r|s,a)$
+		  - Discount rate:$\gamma$, the bigger the more long-sighted
+	  - Optimal Policy Invariance: $r\to ar+b$would not change $v^*$
+	  - meaningless detour: if we set r=0, $\gamma$ will still limit detouring
+	  - 
+	
