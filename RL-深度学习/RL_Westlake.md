@@ -202,7 +202,7 @@ $$
 $$
 v_{\pi}(s)=\sum_{a}\pi(a\mid s)q_{\pi}(s,a)
 $$
-
+	==当前状态价值 = 当前一步期望奖励 + 折现后的下一状态价值。==
 ## Chapter 3. Optimal Policy and Bellman Optimality Equation(BOE)
 
 - If:$$
@@ -245,5 +245,11 @@ $$
 		  - Discount rate:$\gamma$, the bigger the more long-sighted
 	  - Optimal Policy Invariance: $r\to ar+b$would not change $v^*$
 	  - meaningless detour: if we set r=0, $\gamma$ will still limit detouring
-	  - 
-	
+
+## Chapter 4: Value Iteration & Policy Iteration
+- Value iteration algorithm
+	- The algorithm$$v_{k+1}=f(v_k)=\max{\pi}(r_{\pi}+\gamma P_{\pi}v_k),\; k=1,2...$$
+	- Step1: policy update. This step is to solve$$\pi_{k+1}=arg\max{\pi}(r_{\pi}+\gamma P_{\pi}v_k)$$where $v_k$ is given.
+	- Step2: value update.$$v_{k+1}={r_{\pi_{k+1} }{+\gamma P{\pi_{k+1}}}v_k}$$
+	- Procedure: $$v_{k}(s)\to q_{k}(s,a)\to greedy\; policy \;\pi_{k+1}(a|s)\to new \; value \; v_{k+1}=\max_{a} q_{k}(s,a)$$
+	- 
