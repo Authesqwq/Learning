@@ -247,9 +247,44 @@ $$
 	  - meaningless detour: if we set r=0, $\gamma$ will still limit detouring
 
 ## Chapter 4: Value Iteration & Policy Iteration
+
 - Value iteration algorithm
-	- The algorithm$$v_{k+1}=f(v_k)=\max{\pi}(r_{\pi}+\gamma P_{\pi}v_k),\; k=1,2...$$
+	- The algorithm$$v_{k+1}=f(v_k)=\max{\pi}(r_{\pi}+\gamma P_{\pi}v_k),\; k=1,2...$$start from $v_0$
 	- Step1: policy update. This step is to solve$$\pi_{k+1}=arg\max{\pi}(r_{\pi}+\gamma P_{\pi}v_k)$$where $v_k$ is given.
 	- Step2: value update.$$v_{k+1}={r_{\pi_{k+1} }{+\gamma P{\pi_{k+1}}}v_k}$$
 	- Procedure: $$v_{k}(s)\to q_{k}(s,a)\to greedy\; policy \;\pi_{k+1}(a|s)\to new \; value \; v_{k+1}=\max_{a} q_{k}(s,a)$$
-	- 
+
+- Policy iteration algorithm
+	- start from $\pi_0$
+	- step1: policy evaluation(PE)$$v_{\pi_k}=r_{\pi_k}+\gamma P_{\pi_k}v_{\pi_k}$$
+	- step2: policy improvement(PI)$$\pi_{k+1}=arg\max_{\pi}(r_{\pi}+\gamma P_{\pi}v_{\pi_k})$$
+	- Only in theory
+
+- Truncated policy iteration algorithm
+	- ==不判断是否收敛，而判断是否执行足够多次数==
+
+## Chapter 5: Monte Carlo Learning
+
+- Without models: Monte Carlo estimation
+	- imposible to know the distribution
+	- MC estimation: $\mathbb{E}[x]\approx \bar{x}=\frac{1}{N}\sum_{j=1}^{N} x_j$
+	- Law of Large Numbers
+	- $$q_{\pi_k}(s,a)=\mathbb{E}[G_t|S_t=s,A_t=a]\approx\frac{1}{N}\sum_{i=1}^{N}g^(i)(s,a)$$
+	- Fundamental idea: When model is unavailable, we can use data(sample/experience)
+- MC Basic algorithm
+	- Step1: PE. Estimate $q_{\pi_k}(s,a)$ directly, instead of solving $v_{\pi_k}(s)$.
+	- Step2: PI. No change.
+	- Low efficiency
+	- episode length: should be sufficiently long
+- MC Exploring Starts
+	- **Visit**: every time a state-action pair appears in the episode, it is called a visit of that s-a pair
+	- data-efficient method: first-visit method; every-visit method
+	- Generalized policy iteration: switching between PE and PI
+	- Still difficult to achieve
+- MC $\epsilon$-greedy
+	- $\epsilon$-greedy policy$$\pi(a|s)=1-\frac{\epsilon}{|A(s)|}(|A(s)|-1)$$, for the greedy action.
+		- balance between exploitation and exploration: when $\epsilon=0$, it becomes greedy; when $\epsilon=1$, it becomes a uniform distribution.
+	- select $\pi\in {\Pi}_{\epsilon}$
+	- Advantage: stronger exploration ablity
+	- Disadvantage: not optimal in gereral
+## Chapter6. Stochastic Approximation and Stochastic Gradient Descent

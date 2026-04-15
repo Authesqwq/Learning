@@ -2,5 +2,5 @@
   "newFileLocation": "folder",
   "newFileFolderPath": "Attachments",
   "attachmentFolderPath": "Attachments",
-  "showLineNumber": true
+  "showLineNumber": false
 }
