@@ -288,3 +288,29 @@ $$
 	- Advantage: stronger exploration ablity
 	- Disadvantage: not optimal in gereral
 ## Chapter6. Stochastic Approximation and Stochastic Gradient Descent
+
+- Mean estimation
+	- how to calculate the $\bar{x}$?
+		- collect all
+		- incremental and iterative manner
+			- suppose $w_{k+1}=\frac{1}{k}\sum_{i=1}^{k}x_i$
+			then,$$w_{k+1}=w_k-\frac{1}{k}(w_k-x_k)$$it is better than nothing.
+			- let $\alpha_k$ replace 1/k.
+- Stochastic approximation: SA
+	- a broad class of stochastic iterative algorithms
+	- it does not require to know the expression of the objective function
+- Robbins-Monro algorithm: RM
+	- Problem statement:$$g(w)=\nabla_{w}J(w)=0$$if we do not know the expression of $g$?==神经网络==$$w_{k+1}=w_k-a_k\tilde{g}(w_k,\eta_{k})$$
+		- $\tilde{g}(w_k,\eta_{k})=g(w_k)+\eta_k$ is the $k$th noisy observation
+		- $a_k$ is a positive coefficient
+		- thus, the function $g(w)$ is a black box!
+		- PHILOSOPHY: without model, we need data!
+	- Convergence properties:
+		- three conditions:
+			- $0\lt c_1\le\nabla_w g(w)\le c_2$
+				- g to be monotonically increasing; the gradient is bounded from the above.
+			-  $\sum_{k=1}^{\infty}a_k=\infty$and$\sum_{k=1}^{\infty}a_k^2\le \infty$ ensures that $a_k$ converges to 0 as $k\to\infty$; and $a_k$ do not converge to 0 too fast.
+			- $\mathbb{E}[\eta_{k}|H_k]=0$ and $\mathbb{E}[\eta_{k}^2|H_k]\lt \infty$ .
+		- a typical sequence is $a_k=\frac{1}{k}$. we will see that $a_k$ is often selected as a sufficiently small constant.
+	- Apply to mean estimation
+		- Dvoretzky's theorem
