@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "RL-深度学习/RL_Westlake.md",
+                "file": "RL-深度学习/RL总结版.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "RL_Westlake"
+              "title": "RL总结版"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "4e9f1c55a0ec9270",
@@ -188,12 +187,14 @@
   },
   "active": "e3adeb62573f575f",
   "lastOpenFiles": [
+    "Attachments/Pasted image 20260416225421.png",
+    "RL-深度学习/RL_Westlake.md",
+    "RL-深度学习/RL总结版.md",
     "Attachments/Pasted image 20260416223345.png",
     "Attachments/Pasted image 20260416222731.png",
     "Attachments/Pasted image 20260416195759.png",
     "Attachments/Pasted image 20260416195705.png",
     "RL-深度学习/Wangshusen.md",
-    "RL-深度学习/RL_Westlake.md",
     "Attachments/Pasted image 20260414155347.png",
     "CS188.md",
     "DS-数据结构/Data Structure-数据结构.md",
@@ -206,7 +207,6 @@
     "Templates",
     "time.md",
     "Attachments/Pasted image 20260412205408.png",
-    "Attachments/Pasted image 20260412203635.png",
     "Attachments",
     "RL-深度学习"
   ]
