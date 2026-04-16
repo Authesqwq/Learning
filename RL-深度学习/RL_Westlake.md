@@ -443,3 +443,11 @@ $$
 	- suboptimal baseline: $b(s)=v_{\pi}(s)$
 	- advantage function:$\delta_\pi(S,A)\doteq q_\pi(S,A)-v_\pi(S)$
 - Off-policy actor-critic
+	- convert it to off-policy by importance sampling: use ${x_i}\sim p_1$ to estimate $\mathbb{E}_{X\sim p_0}[X]$
+	- Importance sampling: $$\begin{aligned}\mathbb{E}_{X\sim p_0}[X]&=\sum_x p_1(x)\frac{p_0(x)}{p_1{x}}x=\mathbb{E}_{X\sim p_1}[f(X)]\\&\approx \bar{f}=\frac{1}{n}\sum_{i=1}^{n}\frac{p_0(x_i)}{p_1(x_i)}x_i\end{aligned}$$where $\frac{p_0(x_i)}{p_1(x_i)}$ is called the importance weight.
+	- suppose $\beta$ is the behavior policy, the gradient is![[Pasted image 20260416222731.png]]
+	- set baseline
+- Deterministic actor-critic: DPG
+	- the deterministic policy$$a=\mu(s,\theta)\doteq \mu(s)$$
+	- gradient:![[Pasted image 20260416223345.png]]
+	- it does not involve the distribution of A, thus it is off-policy.
